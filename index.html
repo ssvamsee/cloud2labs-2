@@ -348,35 +348,25 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-      // Hide loader after 3 seconds
       window.addEventListener('load', function() {
-  // Set a minimum time for the loader to be visible
-  var loader = document.getElementById('loader');
-  var minDisplayTime = 1000; // 3 seconds
+        var loader = document.getElementById('loader');
+        var minDisplayTime = 100; // 3 seconds
   
-  if (loader) {
-    // Ensure the loader is visible when the page loads
-    // loader.style.display = 'block';
-
-    // Hide the loader after 3 seconds
-    setTimeout(function() {
-      loader.style.display = 'none';
-    }, minDisplayTime);
-  }
-});
-
-
+        if (loader) {
+          setTimeout(function() {
+            loader.style.display = 'none';
+          }, minDisplayTime);
+        }
+      });
     </script>
-        <script>
-          // Hide loader after 3 seconds
-            window.onload = function() {
-              setTimeout(function() {
-                var loader = document.getElementById('loader');
-                loader.style.display = 'none';
-              }, 1000); // Adjust duration as needed
-            };
-    
-        </script>
+    <script>
+      window.onload = function() {
+        setTimeout(function() {
+          var loader = document.getElementById('loader');
+          loader.style.display = 'none';
+        }, 100);
+      };
+    </script>
 
     <script>
       var typed = new Typed('.auto-type',{
